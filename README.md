@@ -8,4 +8,4 @@ Maintainer
 
 [![Quad IT](http://www.quadit.mx/logo/company-logo.png)](http://www.quadit.mx)
 
-This modules are maintained by QuadIT.
+This modules are maintained by QuadIT, may be.
