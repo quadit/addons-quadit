@@ -8,7 +8,7 @@
     "website": "https://www.quadit.mx",
     "category": "Theme/Creative",
     "version": "0.1",
-    "depends": ["website", "theme_treehouse"],
+    "depends": ["website"],
     "application": True,
     "installable": True,
     "data": [
