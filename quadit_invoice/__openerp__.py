@@ -17,6 +17,7 @@
     },
     "depends": [
         "base",
+        "account",
     ],
     "data": [
         "views/report_invoice.xml"
