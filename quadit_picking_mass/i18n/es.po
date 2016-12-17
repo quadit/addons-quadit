@@ -1,0 +1,158 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* quadit_picking_mass
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-17 18:07+0000\n"
+"PO-Revision-Date: 2016-12-17 12:08-0600\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive.line,box:0
+msgid "Boxes"
+msgstr "Cajas"
+
+#. module: quadit_picking_mass
+#: view:stock.picking.massive:quadit_picking_mass.view_stock_picking_massive_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: quadit_picking_mass
+#: selection:stock.picking.massive,state:0
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: quadit_picking_mass
+#: view:stock.picking.massive:quadit_picking_mass.view_stock_picking_massive_form
+msgid "Create Pickings"
+msgstr "Transferir"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive,create_uid:0
+#: field:stock.picking.massive.line,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive,create_date:0
+#: field:stock.picking.massive.line,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive,date:0
+msgid "Datetime"
+msgstr "Fecha y hora"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive,display_name:0
+#: field:stock.picking.massive.line,display_name:0
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: quadit_picking_mass
+#: selection:stock.picking.massive,state:0
+msgid "Done"
+msgstr "Hecho"
+
+#. module: quadit_picking_mass
+#: selection:stock.picking.massive,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive.line,egg:0
+msgid "Eggs"
+msgstr "Huevos"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive,id:0 field:stock.picking.massive.line,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive,__last_update:0
+#: field:stock.picking.massive.line,__last_update:0
+msgid "Last Modified on"
+msgstr "Last Modified on"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive,write_uid:0
+#: field:stock.picking.massive.line,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive,write_date:0
+#: field:stock.picking.massive.line,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive,line_ids:0
+msgid "Lines"
+msgstr "Líneas de la producción"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive,location_dest_id:0
+msgid "Location Dest"
+msgstr "Ubicación destino"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive,location_id:0
+msgid "Location Origin"
+msgstr "Ubicación origen"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: quadit_picking_mass
+#: view:stock.picking.massive:quadit_picking_mass.view_stock_picking_massive_form
+msgid "Order"
+msgstr "Orden"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive.line,paperboard:0
+msgid "Paperboard"
+msgstr "Cartones"
+
+#. module: quadit_picking_mass
+#: model:ir.actions.act_window,name:quadit_picking_mass.stock_picking_mass_action
+#: model:ir.ui.menu,name:quadit_picking_mass.menu_stock_picking_mass
+#: view:stock.picking.massive:quadit_picking_mass.view_stock_picking_mass_tree
+#: view:stock.picking.massive:quadit_picking_mass.view_stock_picking_massive_form
+#: view:stock.picking.massive:quadit_picking_mass.view_stock_picking_massive_tree
+#: field:stock.picking.massive.line,mass_id:0
+msgid "Picking Massive"
+msgstr "Producción"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive,picking_type_id:0
+msgid "Picking Type"
+msgstr "Tipo de movimiento"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive.line,product_id:0
+msgid "Product"
+msgstr "Producto"
+
+#. module: quadit_picking_mass
+#: view:stock.picking.massive:quadit_picking_mass.view_stock_picking_massive_form
+msgid "Products"
+msgstr "Productos"
+
+#. module: quadit_picking_mass
+#: field:stock.picking.massive,state:0
+msgid "State"
+msgstr "Estado"

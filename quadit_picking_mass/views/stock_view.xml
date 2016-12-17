@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+    <data>
+
+    <record model="ir.sequence.type" id="seq_type_prod_id">
+        <field name="name">Production Number</field>
+        <field name="code">stock.picking.massive</field>
+    </record>
+
+    <record model="ir.sequence" id="seq_prod_id">
+        <field name="name">Production Number</field>
+        <field name="code">stock.picking.massive</field>
+        <field name="prefix">PROD</field>
+        <field name="padding">4</field>
+    </record>
+
+
+    <record model='ir.ui.view' id='view_stock_picking_massive_form'>
+        <field name='name'>view.stock.picking.massive.form</field>
+        <field name='model'>stock.picking.massive</field>
+        <field name='arch' type='xml'>
+        <form string='Picking Massive'>
+            <header>
+                <button name="action_create_pickings" states="draft" string="Create Pickings" type="object" icon="gtk-print" class="oe_highlight"/>
+                <button name="action_cancelled" states="draft" string="Cancel" type="object"/>
+                <field name="state" widget="statusbar" statusbar_visible="draft,done,cancel" />
+            </header>
+            <sheet>
+                <div class="oe_title">
+                    <h1>Order <field name="name" class="oe_inline" readonly="1"/></h1>
+                </div>
+                <group col='4'>
+                    <field name='date'/>
+                    <field name='picking_type_id' domain="[('code', '=', 'incoming')]"/>
+                    <field name='location_id' domain="[('usage', '=', 'supplier')]"/>
+                    <field name='location_dest_id' domain="[('usage', '=', 'internal')]"/>
+                </group>
+                <notebook>
+                    <page string='Products'>
+                        <field name='line_ids'>
+                            <tree string='Products' editable='bottom'>
+                                <field name='product_id' domain="[('type', '=', 'product')]"/>
+                                <field name='egg'/>
+                                <field name='box'/>
+                                <field name='paperboard'/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </sheet>
+        </form>
+        </field>
+    </record>
+
+
+    <record model='ir.ui.view' id='view_stock_picking_massive_tree'>
+        <field name='name'>view.stock.picking.massive.tree</field>
+        <field name='model'>stock.picking.massive</field>
+        <field name='arch' type='xml'>
+            <tree string='Picking Massive'>
+                <field name='name'/>
+                <field name='date'/>
+                <field name='location_id'/>
+                <field name='location_dest_id'/>
+                <field name='state'/>
+            </tree>
+        </field>
+    </record>
+
+
+
+    <record model='ir.ui.view' id='view_stock_picking_mass_tree'>
+        <field name='name'>view.stock.picking.mass.tree</field>
+        <field name='model'>stock.picking.massive</field>
+        <field name='arch' type='xml'>
+            <tree string='Picking Massive'>
+                <field name='location_id'/>
+                <field name='location_dest_id'/>
+            </tree>
+        </field>
+    </record>
+
+    <record model='ir.actions.act_window' id='stock_picking_mass_action'>
+        <field name='name'>Picking Massive</field>
+        <field name='res_model'>stock.picking.massive</field>
+        <field name='view_type'>form</field>
+        <field name='view_mode'>tree,form</field>
+        <field name='view_id' ref='view_stock_picking_massive_tree'/>
+    </record>
+
+    <menuitem action="stock_picking_mass_action" id="menu_stock_picking_mass" parent="stock.menu_stock_warehouse_mgmt" sequence="2"/>
+
+    </data>
+</openerp>
