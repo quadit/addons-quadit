@@ -17,11 +17,13 @@
     },
     "depends": [
         "base",
+        "product",
         "stock",
     ],
     "data": [
         "security/ir.model.access.csv",
         "views/stock_view.xml",
+        "views/product_view.xml",
     ],
     "demo": [],
     "qweb": [],

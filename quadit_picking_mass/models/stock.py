@@ -35,6 +35,7 @@ class StockPickingMassive(models.Model):
         comodel_name='stock.picking.massive.line',
         inverse_name='mass_id',
         string='Lines')
+    line_default = fields.Boolean(string='Llenadas')
 
     @api.model
     def create(self, vals):
@@ -73,6 +74,22 @@ class StockPickingMassive(models.Model):
             picking_id.action_confirm()
             picking_id.do_transfer()
             rec.state = 'done'
+
+    @api.one
+    def compute_lines(self):
+        for rec in self:
+            product_array = []
+            product_obj = self.env['product.product']
+            product_ids = product_obj.search([
+                ('default', '=', True),
+            ])
+            for product in product_ids:
+                xline = (0, 0, {
+                    "product_id": product.id,
+                })
+                product_array.append(xline)
+            rec.line_ids = [x for x in product_array]
+            rec.line_default = True
 
 
 class StockPickingMssiveLine(models.Model):

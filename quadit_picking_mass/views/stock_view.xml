@@ -23,17 +23,19 @@
             <header>
                 <button name="action_create_pickings" states="draft" string="Create Pickings" type="object" icon="gtk-print" class="oe_highlight"/>
                 <button name="action_cancelled" states="draft" string="Cancel" type="object"/>
+                <button name="compute_lines" states="draft" string="Load" type="object" attrs="{'invisible': [('line_default', '=', True)]}"/>
                 <field name="state" widget="statusbar" statusbar_visible="draft,done,cancel" />
             </header>
             <sheet>
                 <div class="oe_title">
-                    <h1>Order <field name="name" class="oe_inline" readonly="1"/></h1>
+                    <h1>Production <field name="name" class="oe_inline" readonly="1"/></h1>
                 </div>
                 <group col='4'>
                     <field name='date'/>
                     <field name='picking_type_id' domain="[('code', '=', 'incoming')]"/>
                     <field name='location_id' domain="[('usage', '=', 'supplier')]"/>
                     <field name='location_dest_id' domain="[('usage', '=', 'internal')]"/>
+                    <field name='line_default' invisible="1"/>
                 </group>
                 <notebook>
                     <page string='Products'>
