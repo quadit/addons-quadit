@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <record model="ir.ui.view" id="view_res_sucursales_form">
+      <field name="name">view.res.sucursales.form</field>
+      <field name="model">res.sucursales</field>
+      <field name="arch" type="xml">
+        <form string="Sucursales">
+          <group>
+            <field name="image" widget="image"/>
+          </group>
+          <group>
+            <field name="empresa_id"/>
+            <field name="name"/>
+            <field name="address"/>
+            <field name="phone"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_res_sucursales_tree">
+      <field name="name">view.res.sucursales.tree</field>
+      <field name="model">res.sucursales</field>
+      <field name="arch" type="xml">
+        <tree string="Sucursales">
+          <field name="empresa_id"/>
+          <field name="name"/>
+          <field name="address"/>
+          <field name="phone"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="res_sucursales_action">
+        <field name="name">Sucursales</field>
+        <field name="res_model">res.sucursales</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        action="res_sucursales_action"
+        name="Sucursales"
+        id="menu_sucursales"
+        parent="menu_catalog"
+        sequence="7"/>
+
+
+</data>
+</openerp>
