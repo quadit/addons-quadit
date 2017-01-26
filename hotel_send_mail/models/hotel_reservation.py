@@ -18,26 +18,22 @@ class HotelReservation(models.Model):
             ('create_reservation', '=', True),
         ], limit=1)
         if template_ids:
-            values = email_template_obj.generate_email(template_ids.id, res)
+            vals = email_template_obj.generate_email(template_ids.id, res.id)
             mail_mail_obj = self.env['mail.mail']
-            msg_id = mail_mail_obj.create(values)
-            if msg_id:
-                msg_id.send()
+            msg_id = mail_mail_obj.create(vals)
+            msg_id.send()
         return res
 
-    @api.model
+    @api.multi
     def write(self, values):
-        res = super(HotelReservation, self).write(values)
-        res = super(HotelReservation, self).create(values)
         email_template_obj = self.env['email.template']
         template_ids = email_template_obj.search([
             ('model', '=', 'hotel.reservation'),
             ('update_reservation', '=', True),
         ], limit=1)
         if template_ids:
-            values = email_template_obj.generate_email(template_ids.id, res)
+            vals = email_template_obj.generate_email(template_ids.id, self.id)
             mail_mail_obj = self.env['mail.mail']
-            msg_id = mail_mail_obj.create(values)
-            if msg_id:
-                msg_id.send()
-        return res
+            msg_id = mail_mail_obj.create(vals)
+            msg_id.send()
+        return super(HotelReservation, self).write(values)
