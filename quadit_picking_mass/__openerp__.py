@@ -19,12 +19,15 @@
         "base",
         "product",
         "stock",
+        "sale",
     ],
     "data": [
         "security/ir.model.access.csv",
         "views/stock_view.xml",
         "views/product_view.xml",
+        "views/sale_view.xml",
     ],
     "demo": [],
     "qweb": [],
+    "css": [],
 }

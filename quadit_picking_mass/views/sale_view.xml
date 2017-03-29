@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+        <record id="inherit_view_order_form" model="ir.ui.view">
+          <field name="name">inht.view.order.form</field>
+          <field name="model">sale.order</field>
+          <field name="inherit_id" ref="sale.view_order_form"/>
+          <field name="arch" type="xml">
+            <xpath expr="//field[@name='date_order']" position="after">
+                <field name="line_default" invisible="1"/>
+            </xpath>
+            <xpath expr="//header/button[@name='action_button_confirm']" position="after">
+                <button name="compute_lines" string="Load" type="object" class="oe_highlight" groups="base.group_user" attrs="{'invisible': [('line_default', '=', True)]}"/>
+            </xpath>
+
+          </field>
+        </record>
+
+</data>
+</openerp>

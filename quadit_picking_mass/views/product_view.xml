@@ -9,6 +9,7 @@
       <field name="arch" type="xml">
         <field name="active" position="after">
           <field name="default"/>
+          <field name="default_sale"/>
         </field>
       </field>
     </record>

@@ -9,4 +9,5 @@ class ProductProduct(models.Model):
 
     _inherit = 'product.product'
 
-    default = fields.Boolean(string='Default')
+    default = fields.Boolean(string='Available in Production')
+    default_sale = fields.Boolean(string='Available in Sales')

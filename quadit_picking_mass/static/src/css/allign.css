@@ -1,0 +1,11 @@
+.openerp .oe_list_content th.oe_sortable, .openerp .oe_list_content th.oe_sortable div {
+    cursor: pointer;
+    text-align: right; /* added this line */
+}
+.openerp .rallign {
+    text-align: right;
+}
+.rallign {
+    text-align: right;
+}
+

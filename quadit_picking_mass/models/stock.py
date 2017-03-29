@@ -3,6 +3,9 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 from openerp import api, fields, models
+from openerp.tools import DEFAULT_SERVER_DATETIME_FORMAT
+import datetime
+import time
 
 
 class StockPickingMassive(models.Model):
@@ -13,7 +16,10 @@ class StockPickingMassive(models.Model):
         string='Name',
         default='/',
         required=True,)
-    date = fields.Datetime(string='Datetime', required=True,)
+    date = fields.Datetime(
+        string='Datetime',
+        required=True,
+        default=(lambda *a: time.strftime('%Y-%m-%d %H:%M:%S')))
     picking_type_id = fields.Many2one(
         comodel_name='stock.picking.type',
         string='Picking Type',
@@ -37,6 +43,12 @@ class StockPickingMassive(models.Model):
         string='Lines')
     line_default = fields.Boolean(string='Llenadas')
 
+    _order = 'name desc'
+
+    @api.multi
+    def _compute_total_eggs(self, egg, box, paperboard):
+        return (box * 30) + (paperboard) + (egg * 360)
+
     @api.model
     def create(self, vals):
         vals['name'] = self.env['ir.sequence'].get('stock.picking.massive')
@@ -55,6 +67,8 @@ class StockPickingMassive(models.Model):
                 xline = (0, 0, {
                     'name': l.product_id.description or l.product_id.name,
                     'product_id': l.product_id.id,
+                    'product_uom_qty': self._compute_total_eggs(
+                            l.box, l.paperboard, l.egg),
                     'box': l.box,
                     'paperboard': l.paperboard,
                     'egg': l.egg,
