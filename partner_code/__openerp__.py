@@ -3,25 +3,24 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 {
-    "name": "Partner Code",
-    "summary": "Add field code after name",
-    "version": "8.0.0.1",
-    "category": "Stock",
-    "website": "https://www.quadit.mx/",
-    "author": "<Quadit, S.A. de C.V.>",
-    "license": "AGPL-3",
-    "application": False,
-    "installable": True,
-    "external_dependencies": {
-        "python": [],
-        "bin": [],
+
+    'name': 'Partner Code',
+    'summary': 'Add field code after name',
+    'version': '8.0.0.1',
+    'category': 'Stock',
+    'website': 'https://www.quadit.mx',
+    'author': 'Quadit, S.A. de C.V.',
+    'license': 'AGPL-3',
+    'application': False,
+    'installable': True,
+    'external_dependencies': {
+        'python': [],
+        'bin': [],
     },
-    "depends": [
-        "base",
+    'depends': [
+        'base',
     ],
-    "data": [
-        "views/partner_view.xml",
+    'data': [
+        'views/partner_view.xml',
     ],
-    "demo": [],
-    "qweb": [],
 }

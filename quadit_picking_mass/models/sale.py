@@ -11,8 +11,9 @@ class SaleOrder(models.Model):
 
     line_default = fields.Boolean(string='Llenadas')
 
-    @api.one
+    @api.multi
     def compute_lines(self):
+        self.ensure_one()
         for rec in self:
             product_array = []
             product_obj = self.env['product.product']

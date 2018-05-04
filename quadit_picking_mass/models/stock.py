@@ -87,8 +87,9 @@ class StockPickingMassive(models.Model):
             picking_id.do_transfer()
             rec.state = 'done'
 
-    @api.one
+    @api.multi
     def compute_lines(self):
+        self.ensure_one()
         for rec in self:
             product_array = []
             product_obj = self.env['product.product']

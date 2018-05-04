@@ -3,28 +3,29 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 {
-    "name": "Quick Access",
-    "summary": "Quick Access Menu",
-    "author": "<Quadit, S.A. de C.V.>",
-    "website": "https://www.quadit.mx",
-    "category": "Hidden",
-    "version": "8.0.0.1",
-    "depends": [
-        "base",
-        "account",
-        "product",
-        "hr",
-        "sale",
-        "stock",
+
+    'name': 'Quick Access',
+    'summary': 'Quick Access Menu',
+    'author': 'Quadit, S.A. de C.V.',
+    'website': 'https://www.quadit.mx',
+    'category': 'Hidden',
+    'version': '8.0.0.1',
+    'depends': [
+        'base',
+        'account',
+        'product',
+        'hr',
+        'sale',
+        'stock',
     ],
-    "application": True,
-    "installable": True,
-    "data": [
-        "security/ir.model.access.csv",
-        "views/menu.xml",
-        "views/empresas_view.xml",
-        "views/sucursales_view.xml",
-        "views/departamentos_view.xml",
+    'application': False,
+    'installable': True,
+    'data': [
+        'security/ir.model.access.csv',
+        'views/menu.xml',
+        'views/empresas_view.xml',
+        'views/sucursales_view.xml',
+        'views/departamentos_view.xml',
     ],
-    "demo": [],
+    'demo': [],
 }
