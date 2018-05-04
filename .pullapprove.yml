@@ -9,9 +9,9 @@ reviewers:
         name: admins
         required: 1
         members:
-            - kuro088
+            - quaditmx
     -
         name: developers
         required: 1
         members:
-            - kuro088
+            - quaditmx

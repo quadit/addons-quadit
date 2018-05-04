@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-  <data>
+    <data>
 
-    <record model="ir.ui.view" id="view_res_empresas_form">
-      <field name="name">view.res.empresas.form</field>
-      <field name="model">res.empresas</field>
-      <field name="arch" type="xml">
-        <form string="Empresas">
-          <group>
-            <field name="image" widget="image"/>
-          </group>
-          <group>
-            <field name="name"/>
-            <field name="rfc"/>
-            <field name="address"/>
-            <field name="zip"/>
-            <field name="phone"/>
-            <field name="mail"/>
-          </group>
-        </form>
-      </field>
-    </record>
+        <record model="ir.ui.view" id="view_res_empresas_form">
+            <field name="name">view.res.empresas.form</field>
+            <field name="model">res.empresas</field>
+            <field name="arch" type="xml">
+                <form string="Empresas">
+                    <group>
+                        <field name="image" widget="image"/>
+                    </group>
+                    <group>
+                        <field name="name"/>
+                        <field name="rfc"/>
+                        <field name="address"/>
+                        <field name="zip"/>
+                        <field name="phone"/>
+                        <field name="mail"/>
+                    </group>
+                </form>
+            </field>
+        </record>
 
-    <record model="ir.ui.view" id="view_res_empresas_tree">
-      <field name="name">view.res.empresas.tree</field>
-      <field name="model">res.empresas</field>
-      <field name="arch" type="xml">
-        <tree string="Empresas">
-          <field name="name"/>
-          <field name="address"/>
-          <field name="phone"/>
-          <field name="mail"/>
-          <field name="rfc"/>
-        </tree>
-      </field>
-    </record>
+        <record model="ir.ui.view" id="view_res_empresas_tree">
+            <field name="name">view.res.empresas.tree</field>
+            <field name="model">res.empresas</field>
+            <field name="arch" type="xml">
+                <tree string="Empresas">
+                    <field name="name"/>
+                    <field name="address"/>
+                    <field name="phone"/>
+                    <field name="mail"/>
+                    <field name="rfc"/>
+                </tree>
+            </field>
+        </record>
 
-    <record model="ir.actions.act_window" id="res_empresas_action">
-        <field name="name">Empresas</field>
-        <field name="res_model">res.empresas</field>
-        <field name="view_type">form</field>
-        <field name="view_mode">tree,form</field>
-    </record>
+        <record model="ir.actions.act_window" id="res_empresas_action">
+                <field name="name">Empresas</field>
+                <field name="res_model">res.empresas</field>
+                <field name="view_type">form</field>
+                <field name="view_mode">tree,form</field>
+        </record>
 
-    <menuitem
-        action="res_empresas_action"
-        name="Empresas"
-        id="menu_empresas"
-        parent="menu_catalog"
-        sequence="6"/>
+        <menuitem
+                action="res_empresas_action"
+                name="Empresas"
+                id="menu_empresas"
+                parent="menu_catalog"
+                sequence="6"/>
 
 
 </data>

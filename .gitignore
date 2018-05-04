@@ -60,3 +60,4 @@ target/
 odoo.tar.gz
 sftp-config.json
 .coveralls.yml
+*~
