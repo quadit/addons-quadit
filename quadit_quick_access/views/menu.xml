@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+  <data>
+        <!-- Top menu item -->
+        <menuitem name="Catálogos"
+            id="menu_catalog_root"
+            sequence="15"/>
+
+        <menuitem name="Catálogos"
+            id="menu_catalog"
+            parent="menu_catalog_root"
+            sequence="20"/>
+
+        <menuitem id="menu_account_customer_catalog"
+            name="Clientes"
+            parent="menu_catalog"
+            action="base.action_partner_customer_form"
+            sequence="1"/>
+
+        <menuitem action="hr.open_view_employee_list_my"
+            name="Empleados"
+            id="menu_open_view_employee_list_my_catalog"
+            sequence="2"
+            parent="menu_catalog"/>
+
+        <menuitem action="stock.action_warehouse_form"
+            id="menu_action_warehouse_form_catalog"
+            parent="menu_catalog"
+            name="Almacenes"
+            sequence="3"/>
+
+        <menuitem
+            action="product.product_uom_form_action"
+            id="menu_product_uom_catalog"
+            parent="menu_catalog"
+            name="Unidades de Medida"
+            sequence="4"/>
+
+        <menuitem
+            action="product.product_template_action"
+            name="Insumos"
+            id="stock.menu_stock_products_menu"
+            parent="menu_catalog"
+            sequence="5"/>
+
+
+  </data>
+</openerp>
