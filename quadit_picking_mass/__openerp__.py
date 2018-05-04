@@ -7,7 +7,7 @@
     "summary": "This module create a form with which create a massive picking",
     "version": "8.0.0.1",
     "category": "Stock",
-    "website": "https://www.quadit.mx/",
+    "website": "https://www.quadit.mx",
     "author": "<Quadit, S.A. de C.V.>",
     "license": "AGPL-3",
     "application": False,
