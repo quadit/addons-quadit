@@ -7,7 +7,7 @@
             <field name="code">stock.picking.internal</field>
         </record>
 
-        <record model="ir.sequence" id="seq_prod_id">
+        <record model="ir.sequence" id="seq_move_prod_id">
             <field name="name">Internal Moves Number</field>
             <field name="code">stock.picking.internal</field>
             <field name="prefix">INTERNAL</field>
