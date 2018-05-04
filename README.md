@@ -3,7 +3,7 @@
 
 
 Addons Quadit
-=======
+==========
 
 This modules was written to extend the functionality of Odoo.
 
