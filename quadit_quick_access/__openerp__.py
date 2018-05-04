@@ -3,6 +3,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 {
+
     'name': 'Quick Access',
     'summary': 'Quick Access Menu',
     'author': 'Quadit, S.A. de C.V.',

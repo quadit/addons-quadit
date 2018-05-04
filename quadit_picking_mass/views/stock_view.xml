@@ -42,12 +42,9 @@
                             <field name='line_ids'>
                                 <tree string='Products' editable='bottom'>
                                     <field name='product_id' domain="[('type', '=', 'product')]"/>
-                    <field name='box'/>
-                    <field name='paperboard'/>
-
-                    <field name='egg' string="Unidades" />
-
-
+                                    <field name='box'/>
+                                    <field name='paperboard'/>
+                                    <field name='egg' string="Unidades" />
                                 </tree>
                             </field>
                         </page>

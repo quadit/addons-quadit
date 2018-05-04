@@ -3,6 +3,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 {
+
     'name': 'Sale Order Custom Report',
     'version': '8.0.0.1',
     'category': 'Report',

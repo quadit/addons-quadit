@@ -3,6 +3,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 {
+
     'name': 'Fake Picking Massive',
     'summary': 'This module create a form with which create a massive picking',
     'version': '8.0.0.1',
