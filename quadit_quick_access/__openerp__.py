@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
-# © <2016> <QuadIT>
+# © <2017> <Quadit, S.A. de C.V.>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+
 {
-    "name": "QuadIT - Quick Access",
+    "name": "Quick Access",
     "summary": "Quick Access Menu",
-    "author": "QuadIT",
+    "author": "<Quadit, S.A. de C.V.>",
     "website": "https://www.quadit.mx",
     "category": "Hidden",
-    "version": "0.1",
+    "version": "8.0.0.1",
     "depends": [
         "base",
         "account",

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-# © <2016> <QuadIT>
+# © <2017> <Quadit, S.A. de C.V.>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from openerp import api, fields, models
+from openerp import fields, models
 
 
 class ResDepartamentos(models.Model):
@@ -10,10 +10,7 @@ class ResDepartamentos(models.Model):
     _name = 'res.departamentos'
     _description = 'Departamentos'
 
-    unidad = fields.Char(
-        string='Unidad')
+    unidad = fields.Char(string='Unidad')
     codigo = fields.Char(string='Código')
-    name = fields.Char(
-        string='Nombre')
-    image = fields.Binary(
-        string='Logo')
+    name = fields.Char(string='Nombre')
+    image = fields.Binary(string='Logo')

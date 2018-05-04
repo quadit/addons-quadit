@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-# © <2016> <Quad IT>
+# © <2017> <Quadit, S.A. de C.V.>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 from openerp import api, fields, models
-from openerp.tools import DEFAULT_SERVER_DATETIME_FORMAT
-import datetime
 import time
 
 
@@ -89,8 +87,9 @@ class StockPickingMassive(models.Model):
             picking_id.do_transfer()
             rec.state = 'done'
 
-    @api.one
+    @api.multi
     def compute_lines(self):
+        self.ensure_one()
         for rec in self:
             product_array = []
             product_obj = self.env['product.product']
