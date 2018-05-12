@@ -2,20 +2,14 @@
    :target: https://www.gnu.org/licenses/agpl
    :alt: License: AGPL-3
 
-==============
+============
 Quick Access
-==============
+============
 
 This module extends the functionality of odoo to support new quick access in main menu
 
 Credits
 =======
-
-Images
-------
-
-* Odoo Community Association.
-.. figure:: https://odoo-community.org/logo.png
 
 Contributors
 ------------
@@ -33,4 +27,4 @@ Maintainer
 
 This module is maintained by Quadit, S.A. de C.V.
 
-To contribute to this module, please visit https://www.quadit.mx.
+To contribute to this module, please visit https://www.quadit.mx

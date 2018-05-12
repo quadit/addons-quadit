@@ -2,9 +2,9 @@
    :target: https://www.gnu.org/licenses/agpl
    :alt: License: AGPL-3
 
-==============
+===================================================
 Hotel send e-mail when create or update reservation
-==============
+===================================================
 
 This module extends the functionality of hotel_reservation to support mail templates
 and to allow you to text
@@ -34,12 +34,6 @@ help us smash it by providing detailed and welcomed feedback.
 Credits
 =======
 
-Images
-------
-
-* Odoo Community Association.
-.. figure:: https://odoo-community.org/logo.png
-
 Contributors
 ------------
 
@@ -56,4 +50,4 @@ Maintainer
 
 This module is maintained by Quadit, S.A. de C.V.
 
-To contribute to this module, please visit https://www.quadit.mx.
+To contribute to this module, please visit https://www.quadit.mx

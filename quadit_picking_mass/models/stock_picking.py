@@ -66,7 +66,7 @@ class StockPickingInternal(models.Model):
                     'name': l.product_id.description or l.product_id.name,
                     'product_id': l.product_id.id,
                     'product_uom_qty': self._compute_total_eggs(
-                            l.box, l.paperboard, l.egg),
+                        l.box, l.paperboard, l.egg),
                     'box': l.box,
                     'paperboard': l.paperboard,
                     'egg': l.egg,
