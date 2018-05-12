@@ -3,7 +3,7 @@
    :alt: License: AGPL-3
 
 ==============
-Invoice Report
+Inherit Invoice Report
 ==============
 
 This module extends the functionality of invoice report of odoo to support new css styles.
@@ -23,7 +23,6 @@ Contributors
 * Lázaro Rodríguez <lazaro@quadit.mx> (https://www.quadit.mx)
 
 Do not contact contributors directly about support or help with technical issues.
-
 
 Maintainer
 ----------

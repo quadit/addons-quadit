@@ -9,7 +9,7 @@
     'author': 'Quadit, S.A. de C.V.',
     'website': 'https://www.quadit.mx',
     'category': 'Theme/Creative',
-    'version': '8.0.0.1',
+    'version': '8.0.1.0.0',
     'depends': ['website'],
     'application': False,
     'installable': True,

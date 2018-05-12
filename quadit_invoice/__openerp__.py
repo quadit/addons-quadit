@@ -6,7 +6,7 @@
 
     'name': 'Custom Invoice Report',
     'summary': 'Inherit Invoice Report',
-    'version': '8.0.0.1',
+    'version': '8.0.1.0.0',
     'category': 'Account & Finance',
     'website': 'https://www.quadit.mx',
     'author': 'Quadit, S.A. de C.V.',

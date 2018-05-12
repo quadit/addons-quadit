@@ -3,7 +3,7 @@
    :alt: License: AGPL-3
 
 ==============
-Hotel send e-mail
+Hotel send e-mail when create or update reservation
 ==============
 
 This module extends the functionality of hotel_reservation to support mail templates
@@ -22,12 +22,6 @@ Usage
 To use this module, you need to:
 
 #. Go to https://github.com/SerpentCS/hotelmgmt_v8
-
-
-Known issues / Roadmap
-======================
-
-* ...
 
 Bug Tracker
 ===========
@@ -52,7 +46,6 @@ Contributors
 * Lázaro Rodríguez <lazaro@quadit.mx> (https://www.quadit.mx)
 
 Do not contact contributors directly about support or help with technical issues.
-
 
 Maintainer
 ----------

@@ -3,7 +3,7 @@
    :alt: License: AGPL-3
 
 ==============
-Partner code
+This module allow write partner code
 ==============
 
 This module extends the functionality of module base of odoo to support partner code.
@@ -23,7 +23,6 @@ Contributors
 * Lázaro Rodríguez <lazaro@quadit.mx> (https://www.quadit.mx)
 
 Do not contact contributors directly about support or help with technical issues.
-
 
 Maintainer
 ----------
