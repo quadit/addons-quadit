@@ -1,1 +1,1 @@
-hotelmgmt_v8 git@github.com:SerpentCS/hotelmgmt_v8.git
+hotelmgmt_v8 https://github.com/SerpentCS/hotelmgmt_v8.git
