@@ -2,18 +2,17 @@
 <openerp>
     <data>
 
-        <record model="ir.sequence.type" id="seq_type_prod_id">
+        <record model="ir.sequence.type" id="seq_type_production_id">
             <field name="name">Production Number</field>
             <field name="code">stock.picking.massive</field>
         </record>
 
-        <record model="ir.sequence" id="seq_prod_id">
+        <record model="ir.sequence" id="seq_production_id">
             <field name="name">Production Number</field>
             <field name="code">stock.picking.massive</field>
             <field name="prefix">PROD</field>
             <field name="padding">4</field>
         </record>
-
 
         <record model='ir.ui.view' id='view_stock_picking_massive_form'>
             <field name='name'>view.stock.picking.massive.form</field>
@@ -54,7 +53,6 @@
             </field>
         </record>
 
-
         <record model='ir.ui.view' id='view_stock_picking_massive_tree'>
             <field name='name'>view.stock.picking.massive.tree</field>
             <field name='model'>stock.picking.massive</field>
@@ -68,8 +66,6 @@
                 </tree>
             </field>
         </record>
-
-
 
         <record model='ir.ui.view' id='view_stock_picking_mass_tree'>
             <field name='name'>view.stock.picking.mass.tree</field>

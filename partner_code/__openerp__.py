@@ -6,10 +6,10 @@
 
     'name': 'Partner Code',
     'summary': 'Add field code after name',
-    'version': '8.0.0.1',
+    'version': '8.0.1.0.0',
     'category': 'Stock',
     'website': 'https://www.quadit.mx',
-    'author': 'Quadit, S.A. de C.V.',
+    'author': 'Quadit, S.A. de C.V., Odoo Community Association (OCA)',
     'license': 'AGPL-3',
     'application': False,
     'installable': True,
