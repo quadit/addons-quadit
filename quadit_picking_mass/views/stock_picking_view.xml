@@ -14,7 +14,6 @@
             <field name="padding">4</field>
         </record>
 
-
         <record model='ir.ui.view' id='view_stock_picking_internal_form'>
             <field name='name'>view.stock.picking.internal.form</field>
             <field name='model'>stock.picking.internal</field>
@@ -54,7 +53,6 @@
             </field>
         </record>
 
-
         <record model='ir.ui.view' id='view_stock_picking_internal_tree'>
             <field name='name'>view.stock.picking.internal.tree</field>
             <field name='model'>stock.picking.internal</field>
@@ -68,8 +66,6 @@
                 </tree>
             </field>
         </record>
-
-
 
         <record model='ir.ui.view' id='view_stock_picking_int_tree'>
             <field name='name'>view.stock.picking.int.tree</field>
