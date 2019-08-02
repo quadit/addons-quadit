@@ -17,6 +17,8 @@
             </field>
         </record>
 
+        <!-- FILTRO PARA BUSQUEDA TREE -->
+
         <record model="ir.ui.view" id="stock_validation_filter_id">
             <field name="name">stock.validation.filter.form</field>
             <field name="model">stock.picking</field>
